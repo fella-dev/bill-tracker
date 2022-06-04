@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Bill Tracker</h1>
+    <span>current sold</span>
+    <span id="sold">550 </span>
+
+    <form name="addbill">
+      <label for="reason">Reason</label>
+      <input id="reason" type="text" name="reason" />
+
+      <label for="montant">Montant</label>
+      <input type="number" id="montant" name="montant" />
+
+      <label for="">crédit</label>
+      <input type="radio" name="type" value="crédit" />
+
+      <label for="">Débit</label>
+      <input type="radio" name="type" value="débit" />
+      <button type="submit">add</button>
+    </form>
+
+    <table id="mytable" border="1px">
+      <thead>
+        <th id="tbdate">Date</th>
+        <th id="reason"></th>
+        <th id="tbmontant">montant</th>
+      </thead>
+    </table>
+
+    <script src="/tracker.js"></script>
+  </body>
+</html>
